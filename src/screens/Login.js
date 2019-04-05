@@ -1,12 +1,14 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React, { Component } from 'react';
+import { View, Text, Button } from 'react-native';
 
 export default class Login extends Component {
-  state = {  }
   render() {
     return (
-      <View>
-        <Text>Login</Text>
+      <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
+        <Text>Login Screen</Text>
+        <Button title='Login' onPress= {() => {this.props.navigation.navigate('Discover')}} />
+        <Button title='Signup' onPress= {() => {this.props.navigation.navigate('Signup')}} />
+        <Button title='Discover' onPress= {() => {this.props.navigation.navigate('Discover')}} />
       </View>
     );
   }
