@@ -1,11 +1,13 @@
 import React, { Component  } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
+import VideoBkgrnd from '../components/VideoBkgrnd';
 
 export default class Welcome extends Component {
   render() {
     const {btnContainer, btnLogin, btnSignup, btnLongText, logoContainer, logoText} = styles;
     return (
       <View style={{flex:1}}>
+        
         <View style={logoContainer}>
           <Text style={logoText}>Bevy</Text>
         </View>
