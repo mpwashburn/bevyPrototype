@@ -7,7 +7,6 @@ export default class Welcome extends Component {
     const {btnContainer, btnLogin, btnSignup, btnLongText, logoContainer, logoText} = styles;
     return (
       <View style={{flex:1}}>
-        
         <View style={logoContainer}>
           <Text style={logoText}>Bevy</Text>
         </View>
