@@ -10,6 +10,7 @@ export default class VideoBkgrnd extends Component {
     return (
       <View style={container}>  
         <Video
+          muted='true'
           repeat
           source={Train}
           ref={(ref) => {this.player = ref}}
