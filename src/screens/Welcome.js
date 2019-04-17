@@ -1,6 +1,5 @@
 import React, { Component  } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
-import VideoBkgrnd from '../components/VideoBkgrnd';
 
 export default class Welcome extends Component {
   render() {
