@@ -1,19 +1,24 @@
 import React, { Component  } from 'react';
+import { Button, Rating, AirbnbRating } from 'react-native-elements';
 import { View, Text, TouchableOpacity } from 'react-native';
+import LoginBtn from '../components/LoginBtn';
 
 export default class Welcome extends Component {
   render() {
-    const {btnContainer, btnLogin, btnSignup, btnLongText, logoContainer, logoText} = styles;
+    const {btnContainer, btnLogin, btnSignup, btnLongText, logoContainer, logoText, joinBtn, buttonStyle} = styles;
     return (
       <View style={{flex:1}}>
         <View style={logoContainer}>
           <Text style={logoText}>Bevy</Text>
         </View>
+        <AirbnbRating />
+        <Button style={buttonStyle} raised title="Hey!" />
         <View style={btnContainer}>
+          <LoginBtn title='Join' style={joinBtn}></LoginBtn>
           <TouchableOpacity style={btnLogin} title='Login' onPress={() => {this.props.navigation.navigate('Discover')}}>
           <Text style={btnLongText}>Login</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={btnSignup} title='Login' onPress={() => {this.props.navigation.navigate('#')}}>
+          <TouchableOpacity style={btnSignup} title='Sign Up' onPress={() => {this.props.navigation.navigate('Signup')}}>
           <Text style={btnLongText}>Sign Up</Text>
           </TouchableOpacity>
         </View>
@@ -44,6 +49,9 @@ const styles = {
     alignSelf:'center',
     marginTop:100
   },
+  joinBtn: {
+    backgroundColor:'#6eeb83'
+  },
   btnLogin: {
     width:300,
     height:40,
@@ -64,5 +72,8 @@ const styles = {
     alignSelf:'center',
     paddingTop:10,
     paddingBottom:10
+  },
+  buttonStyle: {
+    height: 75
   }
 };

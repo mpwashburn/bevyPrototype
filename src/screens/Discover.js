@@ -1,3 +1,4 @@
+/** Discover Screen acts like user's timeline where they would see updates of their friend's trips and those that they follow for inspiration **/
 import React, { Component } from 'react';
 import { View, Text, Button } from 'react-native';
 
