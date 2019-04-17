@@ -6,7 +6,10 @@ export default class SettingsScreen extends Component {
     return (
       <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
         <Text>Settings Screen</Text>
-        <Button title='Login' onPress= {() => {this.props.navigation.navigate('Login')}} />
+        <Button title='Welcome Page' onPress= {() => {this.props.navigation.navigate('Welcome')}} />
+        <Button title='Account Details' onPress= {() => {this.props.navigation.navigate('#')}} />
+        <Button title='Preferences' onPress= {() => {this.props.navigation.navigate('#')}} />
+        <Button title='Logout' onPress= {() => {this.props.navigation.navigate('#')}} />
       </View>
     );
   }
