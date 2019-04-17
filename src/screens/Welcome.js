@@ -11,8 +11,6 @@ export default class Welcome extends Component {
         <View style={logoContainer}>
           <Text style={logoText}>Bevy</Text>
         </View>
-        <AirbnbRating />
-        <Button style={buttonStyle} raised title="Hey!" />
         <View style={btnContainer}>
           <LoginBtn title='Join' style={joinBtn}></LoginBtn>
           <TouchableOpacity style={btnLogin} title='Login' onPress={() => {this.props.navigation.navigate('Discover')}}>
