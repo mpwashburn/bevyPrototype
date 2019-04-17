@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Button, ThemeProvider } from 'react-native-elements';
 import { createAppContainer, createSwitchNavigator, createBottomTabNavigator, createStackNavigator, createDrawerNavigator } from 'react-navigation';
 import Ionicon from 'react-native-vector-icons/Ionicons';
 import Welcome from './screens/Welcome';
@@ -14,9 +13,7 @@ import AddTrip from './screens/AddTrip'
 export default class App extends Component {
   render() {
     return (
-      <ThemeProvider>
         <AppContainer />
-      </ThemeProvider>
     )
   }
 }

@@ -1,5 +1,4 @@
 import React, { Component  } from 'react';
-import { Button, Rating, AirbnbRating } from 'react-native-elements';
 import { View, Text, TouchableOpacity } from 'react-native';
 import LoginBtn from '../components/LoginBtn';
 
